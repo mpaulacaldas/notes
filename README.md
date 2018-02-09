@@ -1,2 +1,4 @@
 # notes
-Random notes on data science, economics, etc.
+Notes on stuff that I may want to remember later.
+
+- [R Markdown templates](R/rmarkdown-templates.md)
