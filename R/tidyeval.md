@@ -7,19 +7,19 @@
 Summary of the 5 big ideas presented by Hadley:
 
 1. R code is a tree.
-  - Every expression in R has a hierarchical form.
-  - Every expression can be written in prefix form.
+    - Every expression in R has a hierarchical form.
+    - Every expression can be written in prefix form.
 2. Capture the tree by __quoting__.
-  - `expr()` quotes developer's expression.
-  - `enexpr()` quotes user's expression.
+    - `expr()` quotes developer's expression.
+    - `enexpr()` quotes user's expression.
 3. __Unquoting__ makes it easy to build trees.
-  - `!!` is called unquote, pronounced "bang-bang". It can be used inside `expr()`
+    - `!!` is called unquote, pronounced "bang-bang" :boom: :boom:. It can be used inside `expr()`
 4. __Quote + unquote__
-  - Inside a wrapper function: First, __quote__ the variables with `enexpr()` and then __unquote__ them with `!!` to pass them along.
-  - Be careful with the environment! The variables defined _inside_ the function call will have precedence over the ones from the global environment. [See example in 4:41](https://youtu.be/nERXS3ssntw?t=4m21s)
+    - Inside a wrapper function: First, __quote__ the variables with `enexpr()` and then __unquote__ them with `!!` to pass them along.
+    - Be careful with the environment! The variables defined _inside_ the function call will have precedence over the ones from the global environment. [See example in 4:41](https://youtu.be/nERXS3ssntw?t=4m21s)
 5. __Quosures__ capture expression & environment
-  - `enquo()` captures the user's expression and its environment. 
-  - Therefore, one should use `enquo()` instead of `enexpr()` in a wrapper function.
+    - `enquo()` captures the user's expression and its environment. 
+    - Therefore, one should use `enquo()` instead of `enexpr()` in a wrapper function.
 
 My questions:
 
