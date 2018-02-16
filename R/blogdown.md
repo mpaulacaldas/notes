@@ -64,3 +64,4 @@
 
 ## Other
 - [Making a website with Blogdown](https://www.youtube.com/watch?v=syWAKaj-4ck)
+- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/), by Yihui Xie, Amber Thomas, Alison Presmanes Hill
