@@ -1,6 +1,6 @@
 # Blogdown
 
-## Notes from RStudio webinar by Yihui Xie
+## RStudio webinar by Yihui Xie
 
 [Video](https://www.youtube.com/watch?v=CjTLN-FXiFA)
 
@@ -62,6 +62,7 @@
 
 - To add to RSS feed: add `index.xml` to the directory of your website.
 
-## Other
-- [Making a website with Blogdown](https://www.youtube.com/watch?v=syWAKaj-4ck)
-- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/), by Yihui Xie, Amber Thomas, Alison Presmanes Hill
+## [blogdown book](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas and Alison Presmanes Hill
+
+
+
