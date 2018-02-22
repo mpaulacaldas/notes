@@ -19,7 +19,7 @@
 | `history`| Print recently run commands                                         |
 | `grep`   | Select with regex                                                   |
 | `>`      | Store the output of whatever is on the LHS on the RHS file          |
-| `|`      | Pipe. Use whatever is on the LHS as input for the RHS command       |
+| `\|`      | Pipe. Use whatever is on the LHS as input for the RHS command       |
 | `wc`     | _Word count_. Print number of characters, words and lines in a file |
 | `sort`   | Sorts data in an ascending alphabetical order (default)             |
 | `uniq`   | Remove _adjacent_ duplicated lines                                  |
