@@ -14,3 +14,6 @@ Notes on stuff that I may want to remember later.
 
 ### Python
 - [Pandas vs. base R cheatsheet](https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
+
+### Collaborating
+- TODO: Read [this](https://sandhya-k.gitbooks.io/on-boarding-off-boarding-in-newsrooms/content/links.html) for links on documentation/onboarding
