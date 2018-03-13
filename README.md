@@ -24,8 +24,3 @@ To encourge myself to do this regularly, I will keep a [daily log](daily-log.md)
 
 ### Python
 - :link: [Pandas vs. base R cheatsheet](https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
-
-### TODO
-- [ ] Explore [`fuzzyjoin`](https://github.com/dgrtwo/fuzzyjoin)
-
-- [ ] Read [this](https://sandhya-k.gitbooks.io/on-boarding-off-boarding-in-newsrooms/content/links.html) for links on documentation/onboarding

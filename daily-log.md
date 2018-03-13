@@ -1,4 +1,4 @@
-# Daily log
+# :spiral_calendar: Daily log
 
 2018-03-09
 
@@ -9,3 +9,16 @@
 
 - I _should_ be able to run Stata commands in .Rmd files by changing the chuck option from `{r}` to `{stata}`. This doesn't work for me, I am not really sure why. The method described in this [blog post](https://www.ssc.wisc.edu/~hemken/SASworkshops/Markdown/SASmarkdown.html) (for SAS) did work. I should explore further.
 - This [answer](https://stackoverflow.com/questions/41104576/changing-styles-when-selecting-and-deselecting-multiple-polygons-with-leaflet-sh/41147206#41147206) explains how to use clicks and double clicks to update a Leaflet map.
+
+2018-03-13
+
+- `eventReactive()` is used to create an object with reactive values, while `observeEvent()` is used for side effects ([see this SO answer](https://stackoverflow.com/questions/33519816/shiny-what-is-the-difference-between-observeevent-and-eventreactive)).
+- However, is an object created by `eventReactive()` a reactive object? __Hell, no.__ The values _inside_ the objects are reactive, but the object itself is not. Always read the [documentation](https://www.rdocumentation.org/packages/shiny/versions/1.0.5/topics/reactiveValues).
+
+## TODO
+
+- [ ] Explore [`fuzzyjoin`](https://github.com/dgrtwo/fuzzyjoin).
+
+- [ ] Read [this](https://sandhya-k.gitbooks.io/on-boarding-off-boarding-in-newsrooms/content/links.html) for links on documentation/onboarding.
+
+- [ ] For more on the differences between `observe()`, `reactive()` and `eventReactive()`, read [this](https://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive) and watch [this](https://www.rstudio.com/resources/webinars/shiny-developer-conference/).
