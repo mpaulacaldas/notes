@@ -15,6 +15,9 @@
 - `eventReactive()` is used to create an object with reactive values, while `observeEvent()` is used for side effects ([see this SO answer](https://stackoverflow.com/questions/33519816/shiny-what-is-the-difference-between-observeevent-and-eventreactive)).
 - However, is an object created by `eventReactive()` a reactive object? __Hell, no.__ The values _inside_ the objects are reactive, but the object itself is not. Always read the [documentation](https://www.rdocumentation.org/packages/shiny/versions/1.0.5/topics/reactiveValues).
 
+2018-03-14
+- Started watching Joe Cheng's tutorial on "Effective reactive programming". Resources can be found [here](https://github.com/jcheng5/user2016-tutorial-shiny).
+
 ## TODO
 
 - [ ] Explore [`fuzzyjoin`](https://github.com/dgrtwo/fuzzyjoin).
