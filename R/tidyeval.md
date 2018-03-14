@@ -18,7 +18,7 @@ Summary of the 5 big ideas presented by Hadley:
     - Inside a wrapper function: First, __quote__ the variables with `enexpr()` and then __unquote__ them with `!!` to pass them along.
     - Be careful with the environment! The variables defined _inside_ the function call will have precedence over the ones from the global environment. [See example in 4:41](https://youtu.be/nERXS3ssntw?t=4m21s)
 5. __Quosures__ capture expression & environment
-    - `enquo()` captures the user's expression and its environment. 
+    - `enquo()` captures the user's expression and its environment.
     - Therefore, one should use `enquo()` instead of `enexpr()` in a wrapper function.
 
 My questions:
@@ -27,8 +27,9 @@ My questions:
 
 ## TODO
 
-Check out these resources and take some notes: 
+Check out these resources and take some notes:
 
-- [Advanced R, section IV](https://adv-r.hadley.nz/meta.html)
-- [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html)
-- [This blog post](https://edwinth.github.io/blog/dplyr-recipes/)
+- [ ] [Advanced R, section IV](https://adv-r.hadley.nz/meta.html)
+- [ ] [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html)
+- [ ] https://edwinth.github.io/blog/dplyr-recipes/
+- [ ] https://timmastny.rbind.io/blog/nse-tidy-eval-dplyr-leadr/
