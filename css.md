@@ -49,3 +49,4 @@ Other things to keep in mind:
 
 - Do not wrap the name or hex value of colours in quotation marks.
 - R code elements in RMarkdown are wrapped in `pre` tags.
+- Hyperlinks are wrapped in an `a` selector. `a:hover` defines the style of the link when you hover your mouse over it (see [this example](https://www.w3schools.com/cssref/sel_hover.asp)).
