@@ -19,6 +19,9 @@
 - Started watching Joe Cheng's tutorial on "Effective reactive programming". Resources can be found [here](https://github.com/jcheng5/user2016-tutorial-shiny).
   - :bulb: Also, for this year's interns intro to R, do the thing with the 5 slides with yes/no questions and then answers.
 
+2018-03-17
+- Learned some [CSS](css.md)
+
 ## TODO
 
 - [ ] Explore [`fuzzyjoin`](https://github.com/dgrtwo/fuzzyjoin).
