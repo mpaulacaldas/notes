@@ -94,7 +94,7 @@ Print columns 2 to 4 of a text file with a comma delimiter:
 cut -f 2-4 -d , world.csv
 ```
 
-Print 25th command in `history`: 
+Print 25th command in `history`:
 ```
 !25
 ```
@@ -124,6 +124,19 @@ echo $shellvar
 
 For-loops:
 ```
+for filename in dir/*.txt; do echo $filename; done
+```
 
-``
+To run commands saved in a shell script:
 
+```
+bash file.sh
+```
+
+Pass filenames to scripts with `$@`
+```
+# in script.sh
+head $@
+# in shell
+bash scrip.sh example.csv
+```
