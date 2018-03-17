@@ -19,7 +19,7 @@ Module UI functions need to:
 - wrap results in `tagList()`
 
 They look more or less like this:
-```
+```r
 fooInput <- function(id, label = "Label") {
   # Create namespace
   ns <- NS(id)
@@ -39,7 +39,7 @@ Module server functions need to:
 - have `input`, `output` and `session` as its first parameters
 
 They look more or less like this:
-```
+```r
 foo <- function(input, output, session, ...) {
   # Stuff calling on the IDs created in fooInput()
 }
@@ -48,11 +48,11 @@ foo <- function(input, output, session, ...) {
 Bring it all together:
 - `global.R`: source the script where you have saved your module functions
 - `ui.R`: call the module UI function pretty much like you would with any other input function
-```
+```r
 fooInput("id_foo", "This is a label")
 ```
 - `server.R`: call the server function, making sure you have the same ID
-```
+```r
 callModule(foo, "id_foo", ...)
 ```
 #### More
