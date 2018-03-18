@@ -21,11 +21,3 @@
 
 2018-03-17
 - Learned some [CSS](css.md)
-
-## TODO
-
-- [ ] Explore [`fuzzyjoin`](https://github.com/dgrtwo/fuzzyjoin).
-
-- [ ] Read [this](https://sandhya-k.gitbooks.io/on-boarding-off-boarding-in-newsrooms/content/links.html) for links on documentation/onboarding.
-
-- [ ] For more on the differences between `observe()`, `reactive()` and `eventReactive()`, read [this](https://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive) and watch [this](https://www.rstudio.com/resources/webinars/shiny-developer-conference/).
