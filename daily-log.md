@@ -21,3 +21,6 @@
 
 2018-03-17
 - Learned some [CSS](css.md)
+
+2018-03-22
+- Having problems downloading packages because of anti-virus. [This did the trick](https://stackoverflow.com/a/46037327/4862374)

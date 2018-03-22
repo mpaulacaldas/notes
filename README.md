@@ -6,7 +6,7 @@ To encourage myself to do this regularly, I will keep a [daily log](daily-log.md
 Every once in a while, I should also try to cross stuff off my :point_right: [TODO](TODO.md) :point_left:
 
 ### R
-- [R Markdown templates](R/rmarkdown-templates.md)
+- [Templates](R/templates.md)
 - [Tidyeval](R/tidyeval.md)
 - [Blogdown](R/blogdown.md)
 - [Rarely used but useful functions](R/random-funs.md)
