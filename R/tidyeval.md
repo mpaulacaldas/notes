@@ -45,7 +45,7 @@ model_by_grp <- function(df, grp_var) {
   grp_var_q <- enquo(grp_var)
 
   df %>%
-    group_by(!!grp_var_q) %>%
+    group_by(!! grp_var_q) %>%
     nest() %>%
     mutate(
       model  = map(data, my_lm_fun),
@@ -64,7 +64,7 @@ model_by_grp <- function(df, grp_vars) {
   grp_vars_q <- rlang::sym(grp_vars)
 
   df %>%
-    group_by(!!grp_vars_q) %>%
+    group_by(!! grp_vars_q) %>%
     nest() %>%
     mutate(
       model = map(data, my_lm_fun),
@@ -76,4 +76,22 @@ model_by_grp <- function(df, grp_vars) {
 models <- c("var1", "var2", "var3") %>%
   set_names() %>%
   map(~ model_by_grp(my_df, .x))
+```
+
+`quos()` + `!!!`
+
+```r
+model_by_grps <- function(df, ...) {
+
+  grp_vars_q <- quos(...)
+
+  df %>%
+    group_by(!!! grp_vars_q) %>%
+    nest() %>%
+    mutate(
+      model  = map(data, my_lm_fun),
+      tidy   = map(model, broom::tidy),
+      glance = map(model, broom::glance)
+    )
+}
 ```
