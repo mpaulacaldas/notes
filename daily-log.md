@@ -26,4 +26,4 @@
 - Having problems downloading packages because of anti-virus. [This did the trick](https://stackoverflow.com/a/46037327/4862374)
 
 2018-04-03
-- Build something like [visdat](https://github.com/ropensci/visdat) to visualise if all the variables within a given group are the same. To implement `identical()` recursively, see [this SO answer](https://stackoverflow.com/a/19966739/4862374). My idea was a little different: if the `length(args) > 2L`, sort my arguments and compare the first and the last. Not recursive, but I think it is a good enough hack.
+- Build something like [visdat](https://github.com/ropensci/visdat) to visualise if all the variables within a given group are the same. To implement `identical()` recursively, see [this SO answer](https://stackoverflow.com/a/19966739/4862374). My idea was a little different: if the `length(args) > 2L`, sort my arguments and compare the first and the last. Not recursive, but I think it is a good enough hack. Should read [this](http://adv-r.had.co.nz/Environments.html) too.
