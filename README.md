@@ -21,6 +21,7 @@ Every once in a while, I should also try to cross stuff off my :point_right: [TO
 ### Git
 - [Git configuration](Git/config.md)
 - [Move the most recent commit(s) to a new branch with Git](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
+- [How to recover from `git reset --hard`?](git/lessons.md)
 
 ### Python
 - [Pandas vs. base R cheatsheet](https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
