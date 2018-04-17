@@ -27,3 +27,9 @@
 
 2018-04-03
 - Build something like [visdat](https://github.com/ropensci/visdat) to visualise if all the variables within a given group are the same. To implement `identical()` recursively, see [this SO answer](https://stackoverflow.com/a/19966739/4862374). My idea was a little different: if the `length(args) > 2L`, sort my arguments and compare the first and the last. Not recursive, but I think it is a good enough hack. Should read [this](http://adv-r.had.co.nz/Environments.html) too.
+
+2018-04-12
+- [How to download RTools](http://jtleek.com/modules/01_DataScientistToolbox/02_10_rtools/#1).
+
+2018-04-17
+- `lengths(x)` is base R's equivalent to `map_int(x, length)`
