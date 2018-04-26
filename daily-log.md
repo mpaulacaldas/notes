@@ -33,3 +33,9 @@
 
 2018-04-17
 - `lengths(x)` is base R's equivalent to `map_int(x, length)`
+
+2018-04-19
+- [What](https://serverfault.com/a/430069), [how](http://happygitwithr.com/ssh-keys.html), SSH.
+
+2018-04-20
+- [How to include a logo in RMarkdown HTML](https://stackoverflow.com/a/43010632)
