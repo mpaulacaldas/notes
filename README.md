@@ -17,6 +17,7 @@ Every once in a while, I should also try to cross stuff off my :point_right: [TO
 - [What is the difference between shell, console, and terminal?](https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal)
 - [Datacamp - Intro to Shell for DS](Shell/datacamp.md)
 - [Launching Sublime text from the command line](Shell/sublime-setup.md)
+- [Recipes](Shell/recipes.md)
 
 ### Git
 - [Git configuration](Git/config.md)
