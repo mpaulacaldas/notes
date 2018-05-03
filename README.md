@@ -9,7 +9,7 @@ Every once in a while, I should also try to cross stuff off my :point_right: [TO
 - [Templates](R/templates.md)
 - [Tidyeval](R/tidyeval.md)
 - [Blogdown](R/blogdown.md)
-- [Rarely used but useful functions](R/random-funs.md)
+- [Recipes](R/recipes.md)
 - [Shiny modules](R/shiny-modules.md)
 - [RMarkdown](R/rmarkdown.md)
 

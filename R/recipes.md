@@ -1,4 +1,12 @@
-# Useful but not regularly used functions
+# Recipes
+
+Convert a character string to numeric, when `,` is used as a decimal mark.
+
+```r
+parse_number(x, locale = locale(decimal_mark = ","))
+```
+
+# Other useful functions
 
 - [`pryr::object_size()`](http://adv-r.had.co.nz/memory.html)
 - [`dplyr::pull()`](http://dplyr.tidyverse.org/reference/pull.html) to pull out a variable from a tibble as a vector. Same the thing as `... %>% .$varname`, but perhaps more stylish.
