@@ -12,6 +12,7 @@ Every once in a while, I should also try to cross stuff off my :point_right: [TO
 - [Recipes](R/recipes.md)
 - [Shiny modules](R/shiny-modules.md)
 - [RMarkdown](R/rmarkdown.md)
+- [Row work](R/row-work.md)
 
 ### Shell
 - [What is the difference between shell, console, and terminal?](https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal)

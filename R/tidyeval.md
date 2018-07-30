@@ -55,7 +55,7 @@ model_by_grp <- function(df, grp_var) {
 }
 ```
 
-`rlang::sym()` + `!!`
+`rlang::sym()` or `as.name()` + `!!`
 
 ```r
 # Function
