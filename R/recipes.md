@@ -6,6 +6,12 @@ Convert a character string to numeric, when `,` is used as a decimal mark.
 parse_number(x, locale = locale(decimal_mark = ","))
 ```
 
+Remove all columns with only NAs:
+
+```r
+select_if(df, ~ ! all(is.na(.)))
+```
+
 # Other useful functions
 
 - [`pryr::object_size()`](http://adv-r.had.co.nz/memory.html)

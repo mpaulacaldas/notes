@@ -7,3 +7,5 @@
 - [ ] Read or listen to _[Causal inference: The mix tape](http://scunning.com/stata.html)_. Seems to have good Stata resources.
 
 - [ ] Check out the [antitrust](https://cran.r-project.org/web/packages/antitrust/antitrust.pdf) and [trade](https://cran.r-project.org/web/packages/trade/trade.pdf) CRAN packages.
+
+- [] Check out [ezknitr](https://github.com/ropensci/ezknitr) to knit RMarkdown files from and two pre-specified directories.
