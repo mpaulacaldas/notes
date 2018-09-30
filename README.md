@@ -1,9 +1,7 @@
 # Notes :notebook:
 This is my attempt at keeping track of the things I learn.
 
-To encourage myself to do this regularly, I will keep a [daily log](daily-log.md) file where I will write down 1-2 new things each day. These little notes will _hopefully_ later be sorted into one of the neat little categories below.
-
-Every once in a while, I should also try to cross stuff off my :point_right: [TODO](TODO.md) :point_left:
+I try to put everything in categories. When I don't succeed I put them [here](random.md). I also try to keep track of my [TODO](TODO.md)s.
 
 ### R
 - [Templates](R/templates.md)
@@ -21,7 +19,7 @@ Every once in a while, I should also try to cross stuff off my :point_right: [TO
 - [Recipes](Shell/recipes.md)
 
 ### Git
-- [Git configuration](Git/config.md)
+- [How to...](Git/howto.md)
 - [Move the most recent commit(s) to a new branch with Git](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
 - [How to recover from `git reset --hard`?](Git/lessons.md)
 - [Why should we use Github at work?](Git/why.md)
