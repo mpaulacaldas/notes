@@ -29,3 +29,5 @@ I try to put everything in categories. When I don't succeed I put them [here](ra
 
 ### Other
 - [CSS](css.md)
+- [Blog posts](blogs.md)
+- [Books](books.md)
