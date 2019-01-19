@@ -27,6 +27,9 @@ I try to put everything in categories. When I don't succeed I put them [here](ra
 ### Python
 - [Pandas vs. base R cheatsheet](https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
 
+### Stata
+- [Workflow](Stata/workflow.md)
+
 ### Other
 - [CSS](css.md)
 - [Blog posts](blogs.md)
