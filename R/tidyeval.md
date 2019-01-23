@@ -25,16 +25,6 @@ My questions:
 
 - Is there any situation where we would want to use `enexpr()` instead of `enquo()`?
 
-## TODO
-
-Check out these resources and take some notes:
-
-- [ ] [Advanced R, section IV](https://adv-r.hadley.nz/meta.html)
-- [ ] [Programming with dplyr](http://dplyr.tidyverse.org/articles/programming.html)
-- [ ] https://edwinth.github.io/blog/dplyr-recipes/
-- [ ] https://timmastny.rbind.io/blog/nse-tidy-eval-dplyr-leadr/
-
-
 ## My examples
 
 `enquo()` + `!!`

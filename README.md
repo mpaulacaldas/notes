@@ -1,7 +1,6 @@
 # Notes :notebook:
-This is my attempt at keeping track of the things I learn.
 
-I try to put everything in categories. When I don't succeed I put them [here](random.md). I also try to keep track of my [TODO](TODO.md)s.
+This is my attempt at keeping track of the things I learn.
 
 ### R
 - [Templates](R/templates.md)
@@ -11,6 +10,8 @@ I try to put everything in categories. When I don't succeed I put them [here](ra
 - [Shiny modules](R/shiny-modules.md)
 - [RMarkdown](R/rmarkdown.md)
 - [Row work](R/row-work.md)
+- [EARL 2018](R/cr-earl2018.md)
+- [eRum 2018](R/cr-erum2018.md)
 
 ### Shell
 - [What is the difference between shell, console, and terminal?](https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal)
@@ -34,3 +35,4 @@ I try to put everything in categories. When I don't succeed I put them [here](ra
 - [CSS](css.md)
 - [Blog posts](blogs.md)
 - [Books](books.md)
+- [Set-up](setup.md)

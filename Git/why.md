@@ -2,7 +2,6 @@
 
 ## Pitch
 
-
 ### To the company
 
 - Why we need Github

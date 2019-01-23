@@ -28,3 +28,4 @@ Add some vertical space:
 
 ## Links
 - [Add task lists in R Markdown](https://github.com/jgm/pandoc/wiki/Pandoc-Tricks#via-lua-filter).
+- [How to include a logo in RMarkdown HTML](https://stackoverflow.com/a/43010632).

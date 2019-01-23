@@ -2,7 +2,7 @@
 
 *Extract from e-mail I sent to my coworkers*
 
-Last week I attendended the 2018 European R Users Meeting (eRum2018) in Budapest. The conference is held every two years in Europe and gathers hundreds of R Users from industry and academia.
+Last week I attended the 2018 European R Users Meeting (eRum2018) in Budapest. The conference is held every two years in Europe and gathers hundreds of R Users from industry and academia.
 
 This year's conference lasted three days, with one day dedicated to workshops, and the other two to presentations (which included keynotes, shiny demos, lightning talks and poster sessions).
 
@@ -26,7 +26,7 @@ The tutorial was led by Grace Meyer and Kasia Kulma, the organisers of R-Ladies 
 
 This workshop presented best practices for creating packages (e.g. documentation, testing, continuous integration) and tools for automating the package-creating process. We mainly worked with the `devtools`, `usethis` and `testthat` packages.
 
-I thought this was an excellent training because it gave a nice overview of a lot of topics that are generally covered in very specialised (and sometimes outdated) blogs. Although no previous package-building experience was required to attend the workshop, I think tutorial could have been very difficult to follow for someone with zero experience.
+I thought this was an excellent training because it gave a nice overview of a lot of topics that are generally covered in very specialised (and sometimes outdated) blogs. Although no previous package-building experience was required to attend the workshop, I think the tutorial could have been very difficult to follow for a complete beginner.
 
 The (excellent) slides presented in the tutorial are available at [this Github repo](https://github.com/ColinFay/erum2018).
 
@@ -36,11 +36,11 @@ The tutorial was led by Colin Fay, from [ThinkR](https://thinkr.fr/), a small Fr
 
 ### Not all that _Shiny_ by default
 
-Mikolaj Olszewski and Mateusz Otmianowski presented a Shiny app that they created for Pearson, one of the world's largest learning companies. Their app served as a platform where different stakeholders could monitor and interact with the content and KPIs comming from hundreds of MOOCs and books.
+Mikolaj Olszewski and Mateusz Otmianowski presented a Shiny app that they created for Pearson, one of the world's largest learning companies. Their app served as a platform where different stakeholders could monitor and interact with the content and KPIs coming from hundreds of MOOCs and books.
 
-In my opinion, this was one of the best Shiny presentations because it managed to explain the business logic of the app, the technical and design challanges that they faced and the lessons they learned along the way.
+In my opinion, this was one of the best Shiny presentations because it managed to explain the business logic of the app, the technical and design challenges that they faced and the lessons they learned along the way.
 
-This app took __over 6 months__ to develop. This is a good benchmark to keep in mind for apps that are important in _scale_ and that will need _maintainance_ in the future.
+This app took __over 6 months__ to develop. This is a good benchmark to keep in mind for apps that are important in _scale_ and that will need _maintenance_ in the future.
 
 You can watch their presentation [here on YouTube](https://www.youtube.com/watch?v=3u2r0lUdr7E).
 
