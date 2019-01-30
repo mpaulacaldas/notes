@@ -40,3 +40,4 @@ This is my attempt at keeping track of the things I learn.
 - [Blog posts](blogs.md)
 - [Books](books.md)
 - [Set-up](setup.md)
+- [Discussions](discussions.md)
