@@ -2,7 +2,7 @@
 
 You can host HTML files in Github via Github Pages. The steps to follow are:
 
-1. Create a branch named gh-pages
+1. Create an [orphan branch](https://stackoverflow.com/q/19980631) named gh-pages
 
     ```bash
     git checkout --orphan gh-pages
@@ -13,7 +13,7 @@ You can host HTML files in Github via Github Pages. The steps to follow are:
     - If you are hosting self-contained slides generated with RMarkdown, you should **remove** all other files.
 
     ```bash
-    ls | grep -v slides.html | parallel rm
+    ls | grep -v slides.html | xargs rm
     ```
 
 1. If this is not already the case, rename the HTML `index.html`.
