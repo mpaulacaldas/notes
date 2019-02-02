@@ -19,15 +19,13 @@ This is my attempt at keeping track of the things I learn.
 - [Launching Sublime text from the command line](Shell/sublime-setup.md)
 - [Recipes](Shell/recipes.md)
 
-### Git
+### Git, Github, Gitlab
 - [How to...](Git/howto.md)
 - [Move the most recent commit(s) to a new branch with Git](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
 - [How to recover from `git reset --hard`?](Git/lessons.md)
-
-### Github
-
 - [Why should we use Github at work?](Git/why.md)
 - [How to host an HTML on Github](Git/gh-pages.md)
+- [Guide to connect RStudio and Gitlab](https://gitlab.com/HeidiSeibold/setup-git-rstudio-gitlab)
 
 ### Python
 - [Pandas vs. base R cheatsheet](https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
