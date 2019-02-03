@@ -1,6 +1,10 @@
 ---
 title: "Takeaways from rstudio::conf2019"
-output: github_document
+output:
+  md_document:
+    variant: markdown_github
+    toc: true
+    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE, message=FALSE, warning=FALSE}
@@ -11,20 +15,171 @@ knitr::opts_chunk$set(echo = TRUE)
 
 *From the webinars, because I did not attend* :sob:
 
-## R Markdown
+# R Markdown
 
-### Advanced R Markdown Workshop, Yihui Xie and Alison Hill
+## Advanced R Markdown Workshop, Yihui Xie and Alison Hill
 
 [Website](https://arm.rbind.io/)
-[Video](https://youtu.be/6JX4UNxEOLU)
 
-#### Part I: Customizing R Markdown
+Topics I don't cover in this summary: 
 
-#### Part II: R Markdown extensions
+- [officer](https://rpodcast.github.io/officer-advrmarkdown)
+- [flexdashboard](https://arm.rbind.io/slides/flexdashboard.html)
+- [learnr](https://arm.rbind.io/slides/learnr.pdf)
 
-## Tidy eval
+### xaringan
 
-### Tidy eval in context, Jenny Brian
+*[Slides](https://arm.rbind.io/slides/xaringan.html)*
+
+In the code for slides:
+
+| Term or command | What does it do? |
+|-----------------|------------------|
+| `name: mynameis` | Name of slide, useful for cross-referencing.|
+| `class: center, right` | Sets alignment of the entire slide. |
+| `background-image: url(url/or/path)` | Add background image. |
+| `layout: true` | Will apply layout to all slides. Useful for logos. |
+| `???` | Presenter notes. |
+| `.left[]` `.right[]` | Align some text only. |
+| `.pull-left[]` `.pull-right[]` | Two-columns. |
+
+Inside the code chucks:
+
+| Term or command | What does it do? |
+|-----------------|------------------|
+| `#<<` | Highlight a line of code input. |
+| `knitr::kable(format = "html")` | Print a table. |
+
+In the chunk options:
+
+| Term or command | What does it do? |
+|-----------------|------------------|
+| `highlight.output = c(1, 3)` | Highlight lines 1 and 3. |
+| `highlight.output = 1:3` | Highlight lines 1 to 3. |
+| `highlight.output = TRUE` | Highlight all lines of the output. |
+| `r ref.label='another-chunk'` | Prints and evaluates a previous code chunk.|
+
+
+YAML options for `output:xaringan::moon_reader:`:
+
+| Example | What does it do? |
+|-----------------|------------------|
+| `nature:highlightStyle:github` | Define highlight style option. |
+| `nature:highlightLines:true` | Enable/disable line highlighting. |
+| `seal:false` | First slide will not use the information from the YAML header.|
+| `css:[default, rladies, rladies-fonts]` | Use R-Ladies theme. |
+
+Global options:
+
+| Term or command | What does it do? |
+|-----------------|------------------|
+| `options(knitr.table.format = "html")` | Knit all tables to HTML. |
+| `knitr::opts_chunk$set(fig.retina = 3)` | Makes images clearer.|
+
+
+### bookdown
+
+[*Slides*](https://arm.rbind.io/slides/bookdown.html)
+
+In the console:
+
+```{r, eval = FALSE}
+# Start a bookdown from a template
+bookdown::bookdown_skeleton(getwd())
+
+# Render book
+bookdown::render_book('index.Rmd')
+
+# Serve book (powers "Preview book" add-in)
+bookdown::serve_book()
+```
+
+Other tips:
+
+- Cross-reference figures with `\@ref{fig:fig-chunk-name}` and tables with `\@ref{tab:tab-chunk-name}`
+- It is easy to configure the appearence of the TOC Sidebar by adding options to the headers (see [slides 46-50](https://arm.rbind.io/slides/bookdown.html#46)) or configuring the `_output.yml` file ([slide 51](https://arm.rbind.io/slides/bookdown.html#51)).
+
+In the YAML of the `index.Rmd`:
+
+- For Github sharing, add `github-repo:mpaulacaldas/repo-name`.
+- Use the `url`, `cover-image` and `description` options to customise your [card metadata](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary).
+
+The `_bookdown.yml`:
+
+- Gets fed to `bookdown::render_book()`.
+- Output dir is set to `"docs"` to make publishing in Github pages easier.
+
+The `_output.yml`: 
+
+- Most arguments get passed to `rmarkdown::html_document()`.
+- Don't forget to adapt the link in the `bookdown::gitbook:config:edit:link:` option so that it points to the correnct branch of your book's repo.
+
+### blogdown
+
+[*Slides*](https://arm.rbind.io/slides/blogdown.html)
+
+Global configurations:
+
+```{r, eval = FALSE}
+library(usethis)
+
+edit_r_profile()
+options(
+  blogdown.new_bundle = TRUE, # allows hugo page bundles
+  blogdown.author = "Ada Lovelace",
+  blogdown.ext = ".Rmd",
+  blogdown.subdir = "blog",
+  blogdown.yaml.empty = TRUE,
+  blogdown.new_bundle = TRUE,
+  blogdown.title_case = TRUE
+  )
+```
+
+New site:
+
+```{r, eval=FALSE}
+library(blogdown)
+
+new_site(
+  theme = "jpescador/hugo-future-imperfect", 
+  sample = TRUE, 
+  theme_example = TRUE, 
+  empty_dirs = TRUE,
+  to_yaml = TRUE
+  )
+```
+    
+Keep in mind:
+
+- Don't touch the `index.Rmd` or the `themes/` directory.
+- Don't knit, serve site with `blogdown::serve_site()`.
+- Ignore `public/`. Once you serve your site, you can drag this folder to Netlify.
+
+Edit `config.toml`:
+
+- `ignoreFiles`: Copy and paste from R console upon first serve of site.
+- `relativeURLS = true` for cloud setup.
+- `enableEmoji = true` obviously.
+- `[params]` for more.
+
+Workflow:
+
+1. Open project
+1. "Serve site"
+1. "New post"
+1. Write, save.
+1. Commit, push.
+1. On Netlify, *New site from Git > Pick site repo*
+
+### Customization and extensions
+
+[*Slides*](https://slides.yihui.name/2019-rstudio-conf-rmarkdown-workshop.html#1)
+
+WIP
+
+# Tidy eval
+
+## Tidy eval in context, Jenny Brian
 
 [Repo](https://github.com/jennybc/tidy-eval-context#readme), [Video](https://resources.rstudio.com/rstudio-conf-2019/lazy-evaluation)
 
@@ -36,7 +191,7 @@ You may **not** need tidy eval. Most people don't need to make direct use of [rl
 | Write functions that make names from user input | `:=` |
 | Compute on expressions and manipulate environments | Know the theory + rlang | 
 
-### Working with names and expressions in your tidy eval code, Lionel Henry
+## Working with names and expressions in your tidy eval code, Lionel Henry
 
 [Slides](https://speakerdeck.com/lionelhenry/selecting-and-doing-with-tidy-eval), [Video](https://resources.rstudio.com/rstudio-conf-2019/working-with-names-and-expressions-in-your-tidy-eval-code)
 
@@ -107,9 +262,82 @@ Use scoped dplyr verbs (e.g. `group_by_at()`) to pass selections to action verbs
     
 #### Takeaways
 
-- "Passing the dots" strategies with dplyr (selection _and_ actions) work easily with gouped data.
+- "Passing the dots" strategies with dplyr (selection _and_ actions) work easily with grouped data.
 
 - For other functions, like `tidyr::gather()`, we need to deal with the grouping variables inside the function.
 
 - New discovery: [`dplyr::group_vars()`](https://dplyr.tidyverse.org/reference/groups.html)
+
+# Other
+
+## vctrs, Hadley Wickham
+
+[Video](https://resources.rstudio.com/rstudio-conf-2019/vctrs-tools-for-making-size-and-type-consistent-functions)
+
+- Package aimed at package developers.
+- Base R leads to some **WAT** moments.
+    ```{r}
+    # Dates and date-times give unexpected output and are not consistent.
+    
+    today <- as.Date("2018-09-18")
+    lunch <- as.POSIXct("2018-09-18 12:00", tz = "Europe/London")
+    
+    c(today, lunch)
+    c(lunch, today)
+    c(lunch)
+    c(NULL, lunch)
+    ```
+
+- The `vctr` package tries to get rid of them.
+    ```{r, error=TRUE}
+    library(vctrs)
+    
+    # Forces you to be explicit about the type of output you want
+    vec_c(1.5, "x")
+    vec_c(1.5, "x", .ptype = "character")
+    
+    # Nonetheless, pragmatics > philosophy
+    fa <- factor("a")
+    fb <- factor("b")
+    
+    vec_c(fa, fb)
+    vec_c(fb, fa)
+    
+    # No unexpected output, like in base R
+    c(today, fa)
+    vec_c(today, fa)
+    ```
+    
+- And makes it easier to create new vector classes.
+
+The **main principles** of the package:
+
+1. The output type only depends on the types of the arguments.
+
+    ```{r, results="hold"}
+    # It's hard to guess the type of output returned by base::ifelse()
+    typeof(ifelse(NA, 1, "a"))
+    typeof(ifelse(TRUE, 1, "a"))
+    typeof(ifelse(FALSE, 1, "a"))
+    ```
+    
+    ```{r, error=TRUE}
+    # dplyr is equally annoying
+    typeof(if_else(NA, 1, "a"))
+    ```
+
+1. The order of inputs in `...` does not affect the output type.
+
+1. It uses consistent rules.
+    ```{r}
+    # Needlessly exposes data scientist to R's internals
+    c(factor("a"), factor("b"))
+    
+    # But doesn't follow an underlying principle
+    unlist(list(factor("a"), factor("b")))
+    ```
+
+
+
+
 
