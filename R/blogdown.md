@@ -62,7 +62,11 @@
 
 - To add to RSS feed: add `index.xml` to the directory of your website.
 
-## [blogdown book](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas and Alison Presmanes Hill
+## Misc tips
 
+- Use [Hugo shortcodes](https://gohugo.io/content-management/shortcodes/) to embed tweets, videos and more. Found out about it [here](http://estebanmoro.org/post/2019-02-01-setting-up-your-blog-with-rstudio-and-blogdown/).
 
+## Other resources
 
+- [Book](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas and Alison Presmanes Hill
+- [Notes](R/rstudioconf2019.md#blogdown) from the Advanced RMarkdown Workshop of rstudio::conf2019.
