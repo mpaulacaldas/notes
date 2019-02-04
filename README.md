@@ -12,6 +12,7 @@ This is my attempt at keeping track of the things I learn.
 - [Row work](R/row-work.md)
 - [EARL 2018](R/cr-earl2018.md)
 - [eRum 2018](R/cr-erum2018.md)
+- [rstudio::conf2019](R/rstudioconf2019.md)
 
 ### Shell
 - [What is the difference between shell, console, and terminal?](https://superuser.com/questions/144666/what-is-the-difference-between-shell-console-and-terminal)
