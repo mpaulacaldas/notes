@@ -69,4 +69,4 @@
 ## Other resources
 
 - [Book](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas and Alison Presmanes Hill
-- [Notes](R/rstudioconf2019.md#blogdown) from the Advanced RMarkdown Workshop of rstudio::conf2019.
+- [Notes](rstudioconf2019.md#blogdown) from the Advanced RMarkdown Workshop of rstudio::conf2019.
