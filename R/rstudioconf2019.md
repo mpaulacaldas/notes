@@ -6,6 +6,8 @@
         -   [blogdown](#blogdown)
         -   [Customization and
             extensions](#customization-and-extensions)
+    -   [Parametrised reports, Mike K
+        Smith](#parametrised-reports-mike-k-smith)
 -   [Tidy eval](#tidy-eval)
     -   [Tidy eval in context, Jenny
         Brian](#tidy-eval-in-context-jenny-brian)
@@ -194,6 +196,60 @@ Workflow:
 [*Slides*](https://slides.yihui.name/2019-rstudio-conf-rmarkdown-workshop.html#1)
 
 WIP
+
+Parametrised reports, Mike K Smith
+----------------------------------
+
+[Repo](https://github.com/MikeKSmith/RStudioConf2019),
+[Video](https://resources.rstudio.com/rstudio-conf-2019/the-lazy-and-easily-distracted-report-writer-using-rmarkdown-and-parameterised-reports)
+
+What do you do if you have to perform an analysis across more than 3
+endpoints? You use **parametrised reports**.
+
+The YAML:
+
+``` markdown
+params:
+  endpoint:
+    value: DATA_HARRY
+    choices: 
+      - DATA_HARRY
+      - DATA_RON
+      - DATA_HERMIONE
+  quant_audience: FALSE
+```
+
+Think of `endpoint` as a Shiny input.
+
+You can then use `params$endpoint` and `params$quant_audience` in the
+body of your report to pametrise your content (figures, code chuncks,
+etc.).
+
+For example, the setup chunk could include:
+
+```` markdown
+```{r, eval = FALSE}
+if (!params$quant_audience) knitr::opts_chunk$set(echo = FALSE)
+```
+````
+
+You may also pass `params$quant_audience` to your code chunk options:
+
+```` markdown
+```{r, eval = params$quant_audience}
+# And some code here.
+```
+````
+
+Or use it to add more text (stored outside the main report):
+
+```` markdown
+```{r, eval = params$quant_audience, child = "text_for_quants.Rmd"}
+```
+````
+
+These parameters can also be passed from the `rmarkdown::render()`
+command.
 
 Tidy eval
 =========
