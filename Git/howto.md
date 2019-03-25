@@ -20,3 +20,11 @@ $ git config --global core.autocrlf input
 ### SSH keys
 
 - [What](https://serverfault.com/a/430069), [how](http://happygitwithr.com/ssh-keys.html).
+
+### Remove merged local branches
+
+Modified version of this [SO answer](https://stackoverflow.com/a/6127884).
+
+```bash
+git branch --merged | egrep -v "(master)" | xargs git branch -d
+```
