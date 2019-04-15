@@ -1,5 +1,7 @@
 # Recipes
 
+## Misc
+
 -  Convert a character string to numeric, when `,` is used as a decimal mark.
 
   ```r
@@ -14,6 +16,9 @@
 
 - `lengths(x)` is base R's equivalent to `map_int(x, length)`
 
+## Shiny
+
+- [Add an icon to the shinydashboard::dashboardHeader() title](https://github.com/rstudio/shinydashboard/issues/57#issuecomment-112481086)
 
 # Other useful functions
 
