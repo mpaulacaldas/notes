@@ -1,5 +1,7 @@
 ## Git resources
 
+*E-mail I generally send to juniors*
+
 ### How to use Git with R
 
 First, check out Jenny Brian's tutorial from rstudioconf::2017, [Happy Git and Github for the useR](https://www.rstudio.com/resources/videos/happy-git-and-gihub-for-the-user-tutorial/). The tutorial was aimed at people with little to no exposure of Git, so it focuses on how to use Git via the RStudio GUI instead of the command line. There is a book with installation instructions and exercices at <http://happygitwithr.com/>. I recommend watching the full tutorial + reading the entire book.
