@@ -7,7 +7,7 @@ This is my attempt at keeping track of the things I learn.
 #### Packages
 
 - [Blogdown](R/blogdown.md)
-- [Shiny modules](R/shiny-modules.md)
+- [Shiny](R/shiny.md)
 - [RMarkdown](R/rmarkdown.md)
 - [Tidyeval](R/tidyeval.md)
 
@@ -34,7 +34,6 @@ This is my attempt at keeping track of the things I learn.
 ### Git
 
 - [How-to's](Git/howtos.md)
-- [How to host an HTML on Github](Git/gh-pages.md)
 
 ### Stata
 
@@ -44,6 +43,6 @@ This is my attempt at keeping track of the things I learn.
 
 - [Blog posts](blogs.md)
 - [Books](books.md)
-- [Data analysis gotcha's](discussions.md)
 - [CSS](css.md)
+- [Gotcha's](gotchas.md)
 - [Set-up](setup.md)
