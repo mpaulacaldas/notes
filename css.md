@@ -1,7 +1,5 @@
 # CSS
 
-## From Datacamp's "Communicating with data in the Tidyverse"
-
 CSS stands for _Cascading Style Sheets_.
 
 __CSS specifies rules for HTML tags.__ For example, to set the colour of the level 1 heading, we would write something like:
