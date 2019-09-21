@@ -11,7 +11,6 @@ Second, have a look at Hadley Wickham's chapter in [R Packages](http://r-pkgs.ha
 Here are some other links that I regularly used when learning Git:
 
 - [RStudio's Version Control with Git and SVN](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
-- [DataCamp's Introduction to Git for Data Science](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
 
 ### Basic Git commands
 

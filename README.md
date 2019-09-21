@@ -28,7 +28,7 @@ This is my attempt at keeping track of the things I learn.
 
 ### Shell
 
-- [Datacamp - Intro to Shell for DS](Shell/datacamp.md)
+- [Cheatsheet](Shell/cheatsheet.md)
 - [How-to's](Shell/howtos.md)
 
 ### Git
